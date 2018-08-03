@@ -9,6 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/fragmentandtabhost" />
+            <option value="$PROJECT_DIR$/viewpagerandtablayout" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

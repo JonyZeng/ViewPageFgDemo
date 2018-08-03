@@ -3,16 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".demo1.MainActivity"
     android:orientation="vertical"
-    >
+    tools:context=".RadioGroupAndViewPager.MainActivity">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/mViewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        />
+        android:layout_weight="1" />
 
     <RadioGroup
         android:id="@+id/mRadioGroup"
@@ -25,7 +23,8 @@
         <RadioButton
             android:id="@+id/mRadioBtnHome"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            />
 
         <RadioButton
             android:id="@+id/mRadioBtnInfor"
@@ -33,12 +32,12 @@
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/mRadioBtnContacts"
+            android:id="@+id/mRadioBtnDynamic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/mRadioBtnDynamic"
+            android:id="@+id/mRadioBtnContacts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </RadioGroup>

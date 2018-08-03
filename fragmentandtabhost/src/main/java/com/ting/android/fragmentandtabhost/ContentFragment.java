@@ -1,4 +1,4 @@
-package com.ting.android.viewpagefgdemo.demo1;
+package com.ting.android.fragmentandtabhost;
 
 
 import android.os.Bundle;
@@ -9,8 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import com.ting.android.viewpagefgdemo.R;
 
 /**
  * A simple {@link Fragment} subclass.

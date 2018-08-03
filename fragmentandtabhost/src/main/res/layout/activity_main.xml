@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- 切换卡和盛装那个内容的容器必须由哪个FragmentTabHost来进行包裹  否则会出现问题 -->
+    <android.support.v4.app.FragmentTabHost
+        android:id="@+id/mFragmentTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ccc">
+        <!--切换卡  id只能写成这样子  @android:id/tabs这种写法是Android内置的id的写法  所以后面的tabs也不能改变 -->
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--表示的是盛装那个内容的地方  id也是系统给定的  不能改...-->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" />
+    </android.support.v4.app.FragmentTabHost>
+
+</android.support.constraint.ConstraintLayout>
