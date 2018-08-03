@@ -1,4 +1,4 @@
-package com.ting.android.viewpagefgdemo.demo1;
+package com.ting.android.viewpagefgdemo.RadioGroupAndViewPager;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -7,12 +7,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.HorizontalScrollView;
-import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 
 import com.ting.android.viewpagefgdemo.R;
 
@@ -44,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
     private void setAdapter() {
         MyAdapter myAdapter = new MyAdapter(getSupportFragmentManager());
         mViewPager.setAdapter(myAdapter);
+        mViewPager.setCurrentItem(1);
+        mRadiBtnInfor.setChecked(true);
     }
 
     private void initData() {
@@ -90,6 +88,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * RadioGroup的点击事件，显示的Fragment随着button改变
+     */
     private class OnCheckedListener implements RadioGroup.OnCheckedChangeListener {
         @Override
         public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -115,8 +116,7 @@ public class MainActivity extends AppCompatActivity {
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
         }
-        //当咋们这滚动的页面发生改变的那么咋们是不是希望下面的那个RadioButton进行改变下
-        //就是我们在改变页面的时候，我们对radiobutton进行改变
+        //就是我们在改变页面的时候，我们对radiobutton进行改变.
         public void onPageSelected(int position) {//当页面被选中的时候
             Log.e("------------------","发生改变的顺序是:"+position);
             radioBtns.get(position).setChecked(true);
