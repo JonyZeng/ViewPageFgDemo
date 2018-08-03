@@ -69,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
         //按照顺序放进
         radioBtns.add(mRadiBtnHome);
         radioBtns.add(mRadiBtnInfor);
-        radioBtns.add(mRadiBtnContacts);
         radioBtns.add(mRadiBtnDynamic);
+        radioBtns.add(mRadiBtnContacts);
     }
 
 
@@ -99,15 +99,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.mRadioBtnInfor:
                     mViewPager.setCurrentItem(1);
-
                     break;
                 case R.id.mRadioBtnDynamic:
                     mViewPager.setCurrentItem(2);
-
                     break;
                 case R.id.mRadioBtnContacts:
                     mViewPager.setCurrentItem(3);
-
                     break;
             }
         }
