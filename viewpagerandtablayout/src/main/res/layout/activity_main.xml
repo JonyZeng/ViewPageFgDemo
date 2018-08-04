@@ -4,7 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <!--
+    TabLayout的一些属性：
+    app:tabIndicatorColor="#07f"    //设置指示器颜色
+    app:tabMode="scrollable"        //表示此TabLayout中当子view超出屏幕边界时候，将提供滑动以便滑出不可见的那些子view。
+    app:tabSelectedTextColor="#f07" //设置滑动块被选中的颜色
+    app:tabTextColor="#699"            //设置滑动块字体颜色
+    -->
     <android.support.design.widget.TabLayout
         android:id="@+id/mTabLayout"
         android:layout_width="match_parent"
